@@ -27,7 +27,7 @@ app.use(cors());
 
 //GET Test endpoint
 app.get('/', (req, res) => {
-    res.send(database.users);
+    res.send('its working');
 });
 
 //POST for signin
