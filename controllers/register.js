@@ -26,7 +26,7 @@ const handleRegister = (req, res, db, bcrypt) => {
             })
             .then(trx.commit)
             .then(trx.rollback)
-    }).catch(err => console.log('unable to register'));
+    }).catch(err => console.log(err));
 };
 
 module.exports = {
